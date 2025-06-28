@@ -2,7 +2,6 @@
 
 A modern and responsive Admin Dashboard built with **Next.js**, **TypeScript**, and **TailwindCSS**, featuring animated sidebars, reusable metric widgets, charts (pie, bar, line), and paginated tables. Designed for product management and sales analytics.
 
-![Dashboard Preview](./public/dashboard-preview.png)
 
 ---
 
@@ -30,14 +29,6 @@ A modern and responsive Admin Dashboard built with **Next.js**, **TypeScript**, 
 - **React Paginate** – Simple pagination
 
 ---
-
-## 📸 Screenshots
-
-### Desktop View
-![desktop](./public/screenshots/desktop-view.png)
-
-### Mobile View
-![mobile](./public/screenshots/mobile-view.png)
 
 ---
 

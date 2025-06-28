@@ -142,13 +142,6 @@ interface resProps {
 
 const ResponsiveNav = ({ open, setOpen }: resProps) => {
   const [active, setActive] = useState('');
-  const logout = async () => {
-    await router.push('/');
-  };
-  
-  const router = useRouter();
-
-
 
   return (
     <>
@@ -160,7 +153,7 @@ const ResponsiveNav = ({ open, setOpen }: resProps) => {
       )}
       <motion.aside
         layout
-        className={`fixed top-0 z-50 h-screen bg-white border-r border-slate-300 transition-transform 
+        className={`fixed top-0 z-50 h-full bg-white border-r border-slate-300 transition-transform 
           ${open ? 'translate-x-0' : '-translate-x-full'}
           sm:w-[225px] w-[250px]`}
       >
@@ -189,7 +182,7 @@ const ResponsiveNav = ({ open, setOpen }: resProps) => {
           inActive={setActive}
           open={open}
           notifs={3}
-          href="/"
+          href="/order"
         />
         <Option
           Icon={FiMonitor}
@@ -197,7 +190,7 @@ const ResponsiveNav = ({ open, setOpen }: resProps) => {
           active={active}
           inActive={setActive}
           open={open}
-          href="/"
+          href="/order"
         />
         <Option
           Icon={FiShoppingCart}
@@ -205,7 +198,7 @@ const ResponsiveNav = ({ open, setOpen }: resProps) => {
           active={active}
           inActive={setActive}
           open={open}
-          href="/"
+          href="/customers"
         />
         <Option
             Icon={FiDollarSign}
@@ -221,7 +214,7 @@ const ResponsiveNav = ({ open, setOpen }: resProps) => {
           active={active}
           inActive={setActive}
           open={open}
-          href="/"
+          href="/calender"
         />
         <Option
           Icon={FiTag}
@@ -229,7 +222,7 @@ const ResponsiveNav = ({ open, setOpen }: resProps) => {
           active={active}
           inActive={setActive}
           open={open}
-          href="/"
+          href="/review"
         />
         <Option
           Icon={FiCoffee}
@@ -237,7 +230,7 @@ const ResponsiveNav = ({ open, setOpen }: resProps) => {
           active={active}
           inActive={setActive}
           open={open}
-          href="/"
+          href="/foods"
         />
         <Option
           Icon={FiUsers}
@@ -245,7 +238,7 @@ const ResponsiveNav = ({ open, setOpen }: resProps) => {
           active={active}
           inActive={setActive}
           open={open}
-          href="/"
+          href="/food"
         />
         <Option
           Icon={FiUsers}
@@ -253,7 +246,7 @@ const ResponsiveNav = ({ open, setOpen }: resProps) => {
           active={active}
           inActive={setActive}
           open={open}
-          href="/"
+          href="/customer"
         />
         <Option
           Icon={FiCoffee}
@@ -261,12 +254,11 @@ const ResponsiveNav = ({ open, setOpen }: resProps) => {
           active={active}
           inActive={setActive}
           open={open}
-          href="/"
+          href="/chat"
         />
         <Option
           Icon={FaSignOutAlt}
           title="Wallet"
-          onClick={logout}
           active={active}
           inActive={setActive}
           open={open}

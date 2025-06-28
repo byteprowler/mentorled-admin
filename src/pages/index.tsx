@@ -15,7 +15,7 @@ export default function Index() {
     <h1 className="text-2xl font-bold mb-2">Dashboard</h1>
     <p className="text-sm">Hi, ByteCorp, here are your stats</p>
     </div>
-    <div className="grid grid-cols-4 gap-4">
+    <div className="grid lg:grid-cols-4 sm:grid-cols-2 gap-4">
       <MetricCard title="Total Orders" value={75} icon={<FiShoppingCart />} />
       <MetricCard title="Total Refunded" value={357} icon={<FiDollarSign />} />
       <MetricCard title="Total Canceled" value={65} icon={<FiShoppingCart />} />
@@ -25,7 +25,7 @@ export default function Index() {
       <ChartLine />
       <ChartRevenue />
     </div>
-    <div className="grid gap-4 p-4 grid-cols-2">
+    <div className="grid gap-4 p-4 sm:grid-cols-1 lg:grid-cols-2">
       <ChartPie />
       <ChartBar />
     </div>
