@@ -24,8 +24,8 @@ interface TProps {
 
 const TitleSection: React.FC<TProps> = ({ close }) => {
     return (
-      <div className="mb-3 border-b border-slate-300 pb-3">
-        <div className="flex cursor-pointer items-center justify-between rounded-md transition-colors hover:bg-slate-100">
+      <div className="mb-3 pb-3 mt-4">
+        <div className="flex cursor-pointer items-center justify-center rounded-md transition-colors hover:bg-slate-100">
           <div className="flex p-1 items-center gap-2">
             {close && (
               <motion.div
@@ -35,6 +35,7 @@ const TitleSection: React.FC<TProps> = ({ close }) => {
                 transition={{ delay: 0.125 }}
               >
                 <span className="text-2xl font-extrabold items-center p-4">ByteCorp</span>
+                <p className="text-[12px] font-bold">Where code meets creativity</p>
               </motion.div>
             )}
           </div>
@@ -157,15 +158,14 @@ const ResponsiveNav = ({ open, setOpen }: resProps) => {
           onClick={() => setOpen(false)}
         ></div>
       )}
-      {/* Responsive Navbar */}
       <motion.aside
         layout
         className={`fixed top-0 z-50 h-screen bg-white border-r border-slate-300 transition-transform 
           ${open ? 'translate-x-0' : '-translate-x-full'}
           sm:w-[225px] w-[250px]`}
       >
-        <div className="mb-3 border-b border-slate-300 pb-3">
-          <div className="flex cursor-pointer items-center justify-between rounded-md">
+        <div className="mb-3 border-slate-300 pb-3">
+          <div className="flex cursor-pointer items-center justify-center rounded-md">
             <div className="flex items-center gap-2">
               {open && (
                 <span className="text-2xl font-extrabold">ByteCorp</span>
@@ -183,7 +183,7 @@ const ResponsiveNav = ({ open, setOpen }: resProps) => {
           href="/"
         />
         <Option
-          Icon={FiDollarSign}
+          Icon={FiBarChart}
           title="Order List"
           active={active}
           inActive={setActive}
@@ -208,7 +208,7 @@ const ResponsiveNav = ({ open, setOpen }: resProps) => {
           href="/"
         />
         <Option
-            Icon={FiBarChart}
+            Icon={FiDollarSign}
             title="Analytics"
             active={active}
             inActive={setActive}

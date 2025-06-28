@@ -9,9 +9,9 @@ import {
 } from 'recharts';
 
 const data = [
-  { name: 'Nigeria', value: 35, fill: '#6366F1' },
+  { name: 'Nigeria', value: 35, fill: '#22C55E' },
   { name: 'USA', value: 50, fill: '#3B82F6' },
-  { name: 'India', value: 25, fill: '#22C55E' },
+  { name: 'India', value: 25, fill: '#6366F1' },
   { name: 'Germany', value: 20, fill: '#F59E0B' },
   { name: 'Ghana', value: 30, fill: '#EF4444' },
 ];

@@ -1,4 +1,3 @@
-// components/ChartRevenue.tsx
 import {
   LineChart,
   Line,
@@ -15,7 +14,7 @@ const data = [
   { name: 'Feb', thisYear: 700, lastYear: 320 },
   { name: 'Mar', thisYear: 600, lastYear: 800 },
   { name: 'Apr', thisYear: 800, lastYear: 540 },
-  { name: 'May', thisYear: 650, lastYear: 440 },
+  { name: 'May', thisYear: 300, lastYear: 440 },
   { name: 'Jun', thisYear: 900, lastYear: 620 },
 ];
 

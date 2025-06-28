@@ -1,11 +1,10 @@
-// components/UserTable.tsx
 import { useState } from "react";
 import ReactPaginate from "react-paginate";
 
-const dummyUsers = Array.from({ length: 42 }, (_, i) => ({
+const dummyUsers = Array.from({ length: 36 }, (_, i) => ({
   id: i + 1,
   name: `User ${i + 1}`,
-  email: `user${i + 1}@mail.com`,
+  email: `dummy${i + 1}@gmail.com`,
   status: i % 2 === 0 ? "Active" : "Inactive",
 }));
 
@@ -66,9 +65,9 @@ export default function UserTable() {
           onPageChange={handlePageClick}
           containerClassName="flex items-center space-x-2"
           activeClassName="font-bold text-indigo-600"
-          pageClassName="px-2 py-1 bg-gray-100 rounded hover:bg-gray-200"
-          previousClassName="px-2 py-1 bg-white border rounded hover:bg-gray-100"
-          nextClassName="px-2 py-1 bg-white border rounded hover:bg-gray-100"
+          pageClassName="px-2 py-1 bg-gray-100 rounded hover:bg-gray-200 hover:cursor-pointer"
+          previousClassName="px-2 py-1 bg-white border rounded hover:bg-gray-100 hover:cursor-pointer"
+          nextClassName="px-2 py-1 bg-white border rounded hover:bg-gray-100 hover:cursor-pointer"
         />
       </div>
     </div>
