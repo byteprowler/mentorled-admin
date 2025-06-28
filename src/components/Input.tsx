@@ -3,6 +3,6 @@ export default function Input(){
         <input
          type="text"
          placeholder="Search....."
-         className="" />
+         className="p-4 w-full focus:ring-indigo-500 border-indigo-500 border-2 rounded-md focus:outline-indigo-800" />
     )
 }
